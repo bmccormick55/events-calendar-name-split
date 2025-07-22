@@ -1,0 +1,186 @@
+/*
+ *
+ * IMPORTANT: UTILIZING THE AUTOMATIC UPDATE FEATURE OF THIS CHILD THEME WILL OVERWRITE ANY
+ * CUSTOM CODE PLACED WITHIN THIS FILE. IF YOU WISH TO AUTOMATICALLY UPDATE, PLEASE PLACE
+ * YOUR CODE IN THEME OPTIONS >> CUSTOM CSS OTHERWISE YOU CAN MANUALLY UPDATE THE THEME FILES
+ *
+ */
+
+/*
+ * Footer custom styles
+ */
+
+#footer-widgets {
+    padding : 60px 0 25px;
+}
+
+.footer-widget .et_pb_widget h4 {
+    margin-bottom : 10px;
+}
+
+.footer-widget {
+    margin-bottom : 25px !important;
+}
+
+.footer-widget .et_pb_widget {
+    width : 100%;
+}
+
+/* Bank account */
+
+.bank-account {
+    font-family      : "Lora", Georgia, "Times New Roman", serif;
+    font-size        : 16px;
+    background-color : #F19865;
+    border-radius    : 5px;
+    overflow         : hidden;
+    padding          : 6px 8px 6px 40px;
+    margin-top       : 8px;
+    display          : inline-block;
+    position         : relative;
+    color            : #1A1A1A;
+}
+
+.bank-account:before {
+    font-family : "ETmodules";
+    content     : "\e014";
+    color       : inherit;
+    font-size   : 20px;
+    line-height : 1;
+    position    : absolute;
+    left        : 10px;
+    top         : 50%;
+    margin-top  : -10px;
+}
+
+/* Working hours */
+
+.footer-working-hours li {
+    border-top    : 1px dashed rgba(255, 255, 255, 0.1);
+    padding       : 10px 0;
+    margin-bottom : 0 !important;
+    font-size     : 14px;
+}
+
+.footer-working-hours li:first-child {
+    padding-top : 0;
+    border-top  : 0;
+}
+
+.footer-working-hours li * {
+    display : inline-block;
+}
+
+.footer-working-hours li .day {
+    min-width : 45%;
+    display   : inline-block;
+}
+
+.footer-footer-widget .textwidget p {
+    clear       : both;
+    font-weight : 700;
+}
+
+/* Footer li */
+
+#footer-widgets .footer-widget li {
+    padding-left : 0;
+}
+
+#footer-widgets .footer-widget li:before {
+    border : none;
+}
+
+/* Menu widget */
+
+#footer-widgets .footer-widget ul {
+    display : block;
+    width   : 100%;
+}
+
+#footer-widgets .footer-widget li {
+    border-top    : 1px dashed rgba(255, 255, 255, 0.1);
+    padding       : 10px 25px 10px 0;
+    margin-bottom : 0;
+    line-height   : 1.2;
+    font-weight   : normal;
+    font-size     : 16px;
+    width         : 100%;
+    display       : block;
+}
+
+#footer-widgets .footer-widget li:first-child {
+    border-top : none;
+}
+
+#footer-widgets .footer-widget li:before {
+    content     : "\24";
+    font-family : "ETmodules";
+    right       : 0;
+    top         : 50% !important;
+    margin-top  : -9px;
+    left        : auto;
+    position    : absolute;
+    font-size   : 18px;
+    line-height : 1;
+    width       : auto;
+    height      : auto;
+    border      : none;
+}
+
+/* Footer bottom */
+
+@media (min-width : 980px) {
+    #footer-bottom .container {
+        display         : flex;
+        align-items     : center;
+        flex-direction  : row-reverse;
+        flex-wrap       : nowrap;
+        justify-content : space-between;
+    }
+
+    #footer-bottom .container:before,
+    #footer-bottom .container:after {
+        display : none !important;
+    }
+
+    #footer-info {
+        float          : none;
+        padding-bottom : 0 !important;
+    }
+
+    #footer-bottom .et-social-icons {
+        float : none;
+    }
+}
+
+/* Footer social icons */
+
+#footer-bottom .et-social-icons {
+    padding-bottom : 10px;
+}
+
+#footer-bottom .et-social-icons li {
+    margin-left : 5px;
+}
+
+/*todo: adjust for all fonit sizes*/
+#footer-bottom .et-social-icon a {
+    min-width     : 40px;
+    min-height    : 40px;
+    border-radius : 50%;
+    padding       : 5px;
+    transition    : all 0.2s ease-in-out 0s;
+    border        : 2px solid;
+}
+
+#footer-bottom .et-social-icon a:before {
+    position  : absolute;
+    top       : 50%;
+    left      : 50%;
+    transform : translate(-50%, -50%);
+}
+
+#footer-bottom .et-social-icon a:hover {
+    opacity : 1;
+}

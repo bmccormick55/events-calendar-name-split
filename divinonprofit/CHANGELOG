@@ -1,0 +1,49 @@
+Version 1.1.4, January 31, 2024
+- Include X feed styles
+
+Version 1.1.3, September 10, 2021
+- Change updater url for Aspen Grove Studios product version
+- Add possibly missing files for required plugins installer for Elegant Themes Marketplace product version
+
+Version 1.1.2, April 22, 2021
+ - Removed: Caldera Forms plugin
+ - Added plugins:
+    - Shortcodes for Divi
+    - WP Layouts
+ - Updated demo data importer
+ - Removed /admin/importer directory
+ - Added Addons tab to the admin area
+ - Miscellaneous styling fixes
+
+ Version 1.1.1, December 1, 2020
+ - Fix demo data import: Automatically retry on certain types of errors when doing site imports
+ - Fix demo data import: Certain types of errors during layout import didn't result in an error message (only frozen import progress)
+
+Version 1.1.0, November 27, 2020
+- Added changelog `readme.txt`
+- Updated Child Theme css rules
+- Updated licensing information in `style.css`
+- Added translations to child theme files
+- Updated content, admin styling improvements
+- Updated all stylesheets  to meet wordpress.org CSS Coding Standards
+- Removed slick directory (slick files are enqueued from cdn now)
+- Updated demo importer
+- Moved child theme admin functions from `functions.php` to `admin-functions.php`
+- Added license key protection
+- Added a custom field: "Contact page" on the "Dashboard > Settings > Reading" page;
+- Fixed "Contact" button on single animal page
+- Fixed conflict with default Divi sidebars; Updated sidebars IDs
+- Added styles to Events Calendar 5
+- Miscellaneous styling fixes
+
+Version 1.0.2, September 19, 2019
+- Fixed "View"dropdown styling on event directory page (css/event.css)
+- Removed empty php tag from single-project.php
+- Fixed title on animals search result page (animal-index.php, line 13)
+- Fixed "foreach" issue on single animal page (single-animal.php, lines 110, 117)
+- Added function which checks if 'rwmb_the_value' exist (functions.php)
+- Hide gallery on single animal page when slick slider is not initialized (css/animals.css)
+- Hide animal carousel when slick slider is not initialized (custom/custom-da-modules.css)
+
+Version 1.0.1, April 24, 2019
+- Fixed detection of Events Calendar that could causes some issue - functions.php

@@ -1,0 +1,54 @@
+/* Module styling */
+
+.et_pb_animals .et_pb_animal_post {
+    overflow : hidden;
+}
+
+.et_pb_animal_post .meta {
+    padding : 20px 15px;
+}
+
+.et_pb_animal_post .meta .et_pb_module_header {
+    margin-bottom : 5px;
+}
+
+.et_pb_animal_image {
+    border-radius : 10px;
+    overflow      : hidden;
+    position      : relative;
+    height        : 200px;
+}
+
+.et_pb_animal_image img {
+    width           : 100%;
+    height          : 100%;
+    object-fit      : cover;
+    object-position : center;
+}
+
+.et_pb_animal_image:hover .et_overlay {
+    z-index : 3;
+    opacity : 1;
+}
+
+.et_pb_animals .et_pb_animals_title {
+    margin-bottom : 15px;
+}
+
+/* Gutters */
+
+.et_pb_gutters4 .et_pb_animals .slick-slide {
+    padding : 0 20px;
+}
+
+.et_pb_gutters3 .et_pb_animals .slick-slide {
+    padding : 0 15px;
+}
+
+.et_pb_gutters2 .et_pb_animals .slick-slide {
+    padding : 0 10px;
+}
+
+.et_pb_gutters1 .et_pb_animals .slick-slide {
+    padding : 0;
+}

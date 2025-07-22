@@ -1,0 +1,437 @@
+/*
+ *
+ * IMPORTANT: UTILIZING THE AUTOMATIC UPDATE FEATURE OF THIS CHILD THEME WILL OVERWRITE ANY
+ * CUSTOM CODE PLACED WITHIN THIS FILE. IF YOU WISH TO AUTOMATICALLY UPDATE, PLEASE PLACE
+ * YOUR CODE IN THEME OPTIONS >> CUSTOM CSS OTHERWISE YOU CAN MANUALLY UPDATE THE THEME FILES
+ *
+ */
+
+/* Animal */
+
+.animal-col {
+    text-align : center;
+    overflow   : hidden;
+    transition : all .3s;
+}
+
+.animal-col .et_pb_animal-image {
+    height        : 260px;
+    overflow      : hidden;
+    position      : relative;
+    border-radius : 10px;
+}
+
+.animal-col .et_pb_animal-image img {
+    width           : 100%;
+    height          : 100%;
+    object-fit      : cover;
+    object-position : center;
+}
+
+.animal-col .et_pb_animal-image:hover .et_overlay {
+    z-index : 3;
+    opacity : 1;
+}
+
+.animal-col .img-wrapper .overlay {
+    display            : block;
+    position           : absolute;
+    z-index            : -1;
+    top                : 0;
+    left               : 0;
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing    : border-box;
+    box-sizing         : border-box;
+    width              : 100%;
+    height             : 100%;
+    opacity            : 0;
+    background         : rgba(0, 0, 0, .7);
+    transition         : all .3s;
+}
+
+.animal-col .img-wrapper:hover .overlay {
+    z-index : 3;
+    opacity : 1;
+}
+
+.animal-col .img-wrapper img {
+    max-width       : none;
+    height          : 100%;
+    width           : 100%;
+    object-fit      : cover;
+    object-position : center;
+}
+
+.animal-col h2.et_pb_module_header {
+    font-size      : 20px;
+    padding-bottom : 10px;
+}
+
+.animal-col a.more-link {
+    color       : #222;
+    font-size   : 15px;
+    font-weight : 500;
+    border      : 2px solid;
+    display     : inline-block;
+}
+
+/* 
+ * Animal Archive 
+ */
+
+.archive .animal-col {
+    margin-bottom  : 30px;
+    display        : inline-block;
+    vertical-align : top;
+    font-size      : 14px;
+}
+
+/* Animals grid */
+
+@media (min-width : 800px) and (max-width : 1200px) {
+    .animal-col .et_pb_animal-image {
+        height : 200px;
+    }
+}
+
+@media (min-width : 800px) {
+    .archive .animal-col {
+        width        : 31.33%;
+        margin-right : 3% !important;
+    }
+
+    .archive .animal-col:nth-child(3n) {
+        margin-right : 0 !important;
+        clear        : none;
+    }
+}
+
+@media (min-width : 450px) and (max-width : 800px) {
+    .archive .animal-col {
+        width        : 48.5%;
+        margin-right : 3% !important;
+    }
+
+    .archive .animal-col:nth-child(2n) {
+        margin-right : 0 !important;
+        clear        : none;
+    }
+}
+
+@media (max-width : 600px) {
+    .animal-col .et_pb_animal-image {
+        height : 200px;
+    }
+}
+
+/* 
+ * Single animal page 
+ */
+
+.animal_single .hero {
+    position : relative;
+}
+
+.animal-content-section {
+    background-color : #FFF;
+}
+
+.animal-content-section h3 {
+    padding-bottom : 18px;
+    font-weight    : 500;
+    line-height    : 1.1;
+}
+
+.animal_single .animal-content-section:first-child {
+    border-top-right-radius : 0;
+    border-top-left-radius  : 0;
+}
+
+.animal_single .animal-content-section:last-child {
+    border-bottom-right-radius : 0;
+    border-bottom-left-radius  : 0;
+}
+
+/* Header section */
+
+#animal-header {
+    display        : flex;
+    align-items    : center;
+    padding-top    : 35px;
+    padding-bottom : 25px;
+}
+
+#animal-header h1.entry-title {
+    font-weight    : 600;
+    font-size      : 35px;
+    line-height    : 1.2;
+    padding-bottom : 5px;
+}
+
+#animal-header .subtitle {
+    padding-bottom : 0;
+}
+
+#animal-header .subtitle span {
+    display        : inline-block;
+    vertical-align : middle;
+    font-size      : 17px;
+}
+
+#animal-header span.sep {
+    width            : 5px;
+    height           : 5px;
+    margin           : 0 10px;
+    background-color : #222;
+    border-radius    : 5px;
+    overflow         : hidden;
+    font-size        : 0;
+}
+
+#animal-header .thumb {
+    border-radius : 50%;
+    height        : 95px;
+    width         : 95px;
+    object-fit    : cover;
+    margin-right  : 20px;
+    float         : left;
+}
+
+/* Details section */
+
+#animal-details {
+    display          : flex;
+    flex-wrap        : wrap;
+    background-color : #F4F4F4;
+    padding-top      : 15px;
+    padding-bottom   : 15px;
+}
+
+#animal-details .detail {
+    padding : 10px 20px;
+}
+
+/* About section */
+
+#animal-description {
+    padding-top    : 35px;
+    padding-bottom : 35px;
+}
+
+/* Gallery / Slick slider */
+
+#animal-gallery {
+    padding-top    : 25px;
+    padding-bottom : 25px;
+}
+
+.animal-slider {
+    margin-top : 5px;
+}
+
+.animal-slider .slick-track {
+    display     : flex !important;
+    margin-left : 0;
+}
+
+.animal-slider .slick-track .slick-slide {
+    display     : flex !important;
+    height      : auto;
+    align-items : center;
+    margin      : 0 8px;
+    overflow    : hidden;
+    position    : relative;
+}
+
+.animal-slider .slick-track .slick-slide a {
+    width  : 100%;
+    height : 100%;
+}
+
+.animal-slider .slick-track .slick-slide:hover .et_overlay {
+    z-index : 3;
+    opacity : 1;
+}
+
+.animal-slider .slick-track .slick-slide img {
+    object-fit    : cover;
+    width         : 100%;
+    height        : 100%;
+    max-width     : none;
+    border-radius : 10px;
+}
+
+/* DETAILED SECTION */
+
+#animal-detailed {
+    padding-top : 30px;
+}
+
+#animal-detailed .col {
+    margin-bottom : 30px;
+}
+
+#animal-detailed .col li {
+    position      : relative;
+    padding-left  : 22px;
+    margin-bottom : 8px;
+    font-size     : 16px;
+}
+
+#animal-detailed .col li:before {
+    content     : "\24";
+    font-family : "ETmodules";
+    font-size   : 16px;
+    line-height : 1;
+    position    : absolute;
+    left        : 0;
+    top         : 50%;
+    margin-top  : -8px;
+}
+
+/* MAP SECTION */
+
+#animal-map {
+    padding-top    : 15px;
+    padding-bottom : 30px;
+}
+
+#animal-map .rwmb-map-canvas {
+    border-radius : 10px;
+    overflow      : hidden;
+}
+
+/* Contact */
+
+#animal-contact {
+    padding       : 25px 30px 30px;
+    border-radius : 5px;
+    color         : #FFF;
+    margin-bottom : 40px;
+    position      : relative;
+}
+
+#animal-contact:before {
+    content             : "";
+    width               : 150px;
+    height              : 150px;
+    position            : absolute;
+    right               : -10px;
+    bottom              : -10px;
+    background-size     : contain;
+    background-repeat   : no-repeat;
+    background-position : bottom right;
+    background-image    : url(/wp-content/themes/divinonprofit/images/paw_icon.png);
+    opacity             : 0.1;
+}
+
+#animal-contact a {
+    color : inherit;
+}
+
+#animal-contact h2 {
+    font-weight    : 600;
+    font-size      : 20px;
+    line-height    : 1.2;
+    display        : block;
+    padding-bottom : 10px;
+    margin-bottom  : 25px;
+    color          : #FFF;
+    border-bottom  : 1px dashed rgba(255, 255, 255, 0.15);
+}
+
+#animal-contact .contact {
+    font-size     : 14px;
+    margin-bottom : 20px;
+    position      : relative;
+    z-index       : 5;
+}
+
+#animal-contact .contact span {
+    display     : block;
+    font-size   : 19px;
+    font-weight : 600;
+}
+
+#animal-contact .contact:last-child {
+    margin-bottom : 0;
+}
+
+#animal-contact .contact a {
+    color : inherit;
+}
+
+#animal-contact .et_pb_button {
+    display       : inline-block;
+    margin-top    : 10px;
+    margin-bottom : 5px;
+}
+
+/* Sidebar */
+
+@media (min-width : 980px) {
+    .single-animal .et_pb_column_1_4 #sidebar {
+        float   : none;
+        padding : 0;
+        width   : 100% !important;
+    }
+}
+
+/* Other posts section  */
+
+.divinonprofit-rand-posts-slider .animal-col .et_pb_animal-image {
+    height : 200px;
+}
+
+/* Mobile ready */
+
+@media (min-width : 550px) {
+    .animal_single .hero-image {
+        height              : 250px;
+        background-size     : cover;
+        background-repeat   : no-repeat;
+        background-position : center center;
+    }
+
+    .animal_single .hero-image img {
+        display : none;
+    }
+
+    .animal_single section.content .et_pb_column_3_4 {
+        margin-top : -219px;
+    }
+
+    .animal_single .breadcrumbs {
+        color : #FFF;
+    }
+
+    .animal-content-section {
+        padding-right : 40px;
+        padding-left  : 40px;
+    }
+}
+
+@media (max-width : 550px) {
+    .animal_single .hero-image {
+        line-height : 0;
+    }
+
+    #animal-header .thumb {
+        display : none;
+    }
+
+    #animal-header {
+        padding-top : 10px;
+    }
+}
+
+@media (min-width : 700px) {
+    #animal-detailed {
+        display         : flex;
+        justify-content : space-between;
+    }
+
+    #animal-detailed .col {
+        width : 47%;
+    }
+}

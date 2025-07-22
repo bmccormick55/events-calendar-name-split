@@ -1,0 +1,24 @@
+#ctf .ctf-tweet-items {
+	margin-right: 20px;
+}
+
+#ctf #ctf-more {
+	font-size: 16px;
+	width: 94%;
+}
+
+#ctf .ctf-twitterlink {
+	margin-top: 10px;
+}
+
+#ctf .ctf-action-count {
+	margin-top: 11px;
+}
+
+#ctf p.ctf-tweet-text {
+	font-size: 14px;
+}
+
+#ctf .ctf-with-logo .ctf-author-box {
+	margin-bottom: 0px;
+}

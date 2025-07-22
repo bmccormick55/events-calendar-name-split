@@ -1,0 +1,281 @@
+/*
+ *
+ * IMPORTANT: UTILIZING THE AUTOMATIC UPDATE FEATURE OF THIS CHILD THEME WILL OVERWRITE ANY
+ * CUSTOM CODE PLACED WITHIN THIS FILE. IF YOU WISH TO AUTOMATICALLY UPDATE, PLEASE PLACE
+ * YOUR CODE IN THEME OPTIONS >> CUSTOM CSS OTHERWISE YOU CAN MANUALLY UPDATE THE THEME FILES
+ *
+ */
+
+/*
+ * Menu custom styles
+ */
+
+/* Main menu */
+
+#top-menu li {
+    padding-right : 17px;
+}
+
+/* Search icon */
+
+.et_header_style_left #et_top_search,
+.et_header_style_centered #et_top_search,
+.et_header_style_split #et_top_search {
+    width          : 37px;
+    margin-top     : -1px !important;
+    margin-left    : 10px;
+    overflow       : hidden;
+    height         : 37px;
+    position       : relative;
+    display        : inline-block;
+    float          : none;
+    vertical-align : middle;
+}
+
+.et_header_style_left #et_search_icon:before,
+.et_header_style_centered #et_search_icon:before,
+.et_header_style_split #et_search_icon:before {
+    top           : 0 !important;
+    left          : 0 !important;
+    width         : 35px;
+    height        : 35px;
+    font-size     : 13px !important;
+    font-weight   : bold;
+    line-height   : 35px !important;
+    text-align    : center;
+    margin-top    : 0 !important;
+    border        : 1px solid rgba(255, 255, 255, .2);
+    border-radius : 50%;
+}
+
+.et_header_style_centered #et_top_search {
+    vertical-align : middle;
+}
+
+@media (max-width : 980px) {
+    #et_top_search {
+        margin-right : 15px;
+    }
+
+    #top-header #et-info {
+        padding-top : 5px;
+    }
+}
+
+/* Phone element */
+
+@media (min-width : 980px) {
+    .et_header_style_left #et-top-navigation,
+    .et_header_style_centered #et-top-navigation,
+    .et_header_style_split #et-top-navigation {
+        margin-top : -5px;
+    }
+
+    .da-menu-phone {
+        padding  : 0 !important;
+        position : relative;
+    }
+
+    .da-menu-phone a {
+        color         : #FFF !important;
+        position      : relative;
+        padding       : 10px 15px 10px 35px !important;
+        border-radius : 30px;
+    }
+
+    .da-menu-phone a:before {
+        content     : "\e090";
+        color       : #FFF;
+        font-family : "ETmodules";
+        font-size   : 16px;
+        line-height : 1;
+        position    : absolute;
+        left        : 12px;
+        top         : 50%;
+        transform   : translateY(-50%);
+    }
+}
+
+@media (max-width : 980px) {
+    li.menu-item.da-menu-phone {
+        display : none;
+    }
+}
+
+/* TOP HEADER MENU */
+
+#top-header .container {
+    padding : 8px 0;
+}
+
+#et-secondary-nav > li > a {
+    padding-top    : 5px !important;
+    padding-bottom : 5px !important;
+    margin-bottom  : 0;
+}
+
+#et-secondary-nav .menu-item-has-children > a:first-child:after {
+    top         : 50%;
+    transform   : translateY(-50%);
+    right       : 0;
+    line-height : 1;
+}
+
+#et-info {
+    padding-bottom : 0;
+}
+
+/* flex */
+
+#top-header .container {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    flex-direction  : row-reverse;
+}
+
+#top-header .container:before,
+#top-header .container:after {
+    display : none;
+}
+
+#top-header #et-secondary-menu,
+#top-header #et-info {
+    float : none;
+}
+
+/* Phone & email */
+
+#et-info-phone:before,
+#et-info-email:before {
+    font-family    : "Open Sans" !important;
+    font-size      : 12px !important;
+    font-weight    : 300;
+    text-transform : uppercase;
+    line-height    : 19px !important;
+    margin-right   : 3px;
+    opacity        : 0.85;
+    color          : inherit;
+    top            : 0;
+}
+
+/* SOCIAL ICONS */
+
+#top-header .et-social-icons {
+    vertical-align : middle;
+    margin-left    : 10px;
+}
+
+#top-header li.et-social-icon {
+    margin-left : 3px !important;
+    margin-top  : 0 !important;
+}
+
+#top-header .et-social-icon a {
+    font-size     : 15px;
+    width         : 32px;
+    height        : 32px;
+    line-height   : 30px;
+    border-radius : 50%;
+    transition    : all 0.2s ease-in-out 0s;
+    border        : 2px solid;
+}
+
+#top-header .et-social-icon a:hover {
+    color   : #FFF;
+    opacity : 1;
+}
+
+/* Sub menu */
+
+.nav li ul,
+ul#mobile_menu,
+#et-secondary-nav li > ul {
+    border  : none !important;
+    padding : 0;
+}
+
+#et-secondary-nav li li,
+#top-menu li li {
+    font-weight : normal !important;
+    text-align  : left;
+}
+
+#et-secondary-nav li:not(.mega-menu) li,
+#top-menu li:not(.mega-menu) li {
+    padding-left  : 0;
+    padding-right : 0;
+    width         : 100%;
+}
+
+#et-secondary-nav li > ul li a,
+#top-menu li li a,
+.et_mobile_menu li a,
+#mobile_menu li a {
+    padding       : 12px 23px;
+    line-height   : normal;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.1);
+    opacity       : 1;
+    font-size     : 15px !important;
+    font-weight   : normal;
+}
+
+#et-secondary-nav li:not(.mega-menu) li a,
+#top-menu li:not(.mega-menu) li a {
+    display : block;
+    width   : 100%;
+}
+
+#et-secondary-nav li > ul li a:hover,
+#top-menu li li a:hover,
+.et_mobile_menu li a:hover,
+#mobile_menu li a:hover {
+    padding-left : 28px !important;
+}
+
+#et-secondary-nav li > ul li:last-child a,
+#top-menu li li:last-child a,
+ul#mobile_menu li:last-child a,
+#mobile_menu i:last-child a {
+    border : none;
+}
+
+.mobile_nav.opened span.mobile_menu_bar:before {
+    content : "\4d";
+}
+
+#et-secondary-nav li .menu-item-has-children > a:first-child:after,
+#main-header .nav li ul.sub-menu li.menu-item-has-children > a:after {
+    top       : 50% !important;
+    transform : translateY(-50%);
+    content   : "\35";
+    right     : 20px;
+    left      : auto;
+}
+
+@media (max-width : 980px) {
+    #main-header .mobile_nav {
+        background-color : transparent !important;
+        font-weight      : normal;
+    }
+
+    #top-header #et-info {
+        text-align : center;
+        width      : 100%;
+    }
+}
+
+/* Responsive */
+
+@media (min-width : 980px) and (max-width : 1200px) {
+    #top-header .container,
+    #main-header .container {
+        width : 95%;
+    }
+}
+
+@media (max-width : 600px) {
+    #main-header #et_top_search {
+        display : none;
+    }
+}
