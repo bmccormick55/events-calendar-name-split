@@ -710,16 +710,16 @@ add_action('wp_footer', function() {
     ?>
     <script>
     function hideAndFillTribeNameField() {
-      // 1. Remove all "default name" fields everywhere (entire field wrapper)
+
       document.querySelectorAll('.tribe-tickets__iac-field--name').forEach(function(el){
-        el.remove(); // Use remove() to truly kill it and its space
+        el.remove(); 
       });
 
-      // 2. Fill the hidden default name input (if still in DOM) with First + Last
+
       document.querySelectorAll('.tribe-tickets__attendee-tickets-container').forEach(function(container){
         var first = container.querySelector('input[name*="first_name"]');
         var last = container.querySelector('input[name*="last_name"]');
-        // If a backup name field is left in DOM, fill it just in case
+
         var name = container.querySelector('input[name*="iac-name"], input[name^="attendee_name"]');
         if(first && last && name) {
           name.value = (first.value + ' ' + last.value).trim();
@@ -727,11 +727,11 @@ add_action('wp_footer', function() {
       });
     }
 
-    // Run once on page load
+
     document.addEventListener('DOMContentLoaded', hideAndFillTribeNameField);
-    // Also run on DOM changes (modals, AJAX, add attendee, etc)
+
     new MutationObserver(hideAndFillTribeNameField).observe(document.body, {childList:true,subtree:true});
-    // Update as user types
+
     document.addEventListener('input', hideAndFillTribeNameField);
     </script>
     <?php
