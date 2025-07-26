@@ -1,0 +1,16 @@
+/* Admin styling */
+
+.et-pb-all-modules > li.et_pb_animals {
+    color            : #FFF;
+    background-color : #F13E4B;
+}
+
+.et-pb-all-modules > li.et_pb_animals:hover {
+    color            : #FFF;
+    background-color : #D83743;
+}
+
+.et-pb-all-modules > li.et_pb_animals:before {
+    content     : "\53";
+    font-family : "etbuilder";
+}

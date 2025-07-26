@@ -1,0 +1,221 @@
+/*
+ *
+ * IMPORTANT: UTILIZING THE AUTOMATIC UPDATE FEATURE OF THIS CHILD THEME WILL OVERWRITE ANY
+ * CUSTOM CODE PLACED WITHIN THIS FILE. IF YOU WISH TO AUTOMATICALLY UPDATE, PLEASE PLACE
+ * YOUR CODE IN THEME OPTIONS >> CUSTOM CSS OTHERWISE YOU CAN MANUALLY UPDATE THE THEME FILES
+ *
+ */
+
+/*
+ * Project custom styles
+ */
+
+.project-col {
+    text-align     : left;
+    overflow       : hidden;
+    transition     : all .3s;
+    font-size      : 14px;
+    line-height    : 1.4;
+    display        : inline-block;
+    vertical-align : top;
+    margin-bottom  : 20px;
+}
+
+.project-col .et_pb_project-image {
+    height        : 260px;
+    overflow      : hidden;
+    position      : relative;
+    border-radius : 10px;
+}
+
+.project-col .et_pb_project-image img {
+    width           : 100%;
+    height          : 100%;
+    object-fit      : cover;
+    object-position : center;
+}
+
+.project-col .et_pb_project-image:hover .et_overlay {
+    z-index : 3;
+    opacity : 1;
+}
+
+.project-col .img-wrapper .overlay {
+    display            : block;
+    position           : absolute;
+    z-index            : -1;
+    top                : 0;
+    left               : 0;
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing    : border-box;
+    box-sizing         : border-box;
+    width              : 100%;
+    height             : 100%;
+    opacity            : 0;
+    background         : rgba(0, 0, 0, .7);
+    transition         : all .3s;
+}
+
+.project-col .img-wrapper:hover .overlay {
+    z-index : 3;
+    opacity : 1;
+}
+
+.project-col .img-wrapper img {
+    max-width       : none;
+    height          : 100%;
+    width           : 100%;
+    object-fit      : cover;
+    object-position : center;
+}
+
+.project-col .meta {
+    padding : 30px 15px;
+}
+
+.project-col .meta p.post-excerpt {
+    margin-bottom : 12px;
+}
+
+.project-col .project-categories {
+    text-transform : uppercase;
+    padding-bottom : 5px;
+}
+
+.project-col h2.et_pb_module_header {
+    font-size      : 23px;
+    font-weight    : 600;
+    padding-bottom : 12px;
+}
+
+.project-col a.more-link {
+    color       : #222;
+    font-size   : 15px;
+    font-weight : 500;
+}
+
+/* project grid */
+
+@media (min-width : 700px) and (max-width : 1200px) {
+    .project-col .et_pb_project-image {
+        height : 200px;
+    }
+}
+
+@media (min-width : 700px) {
+    .archive .project-col {
+        width        : 48%;
+        margin-right : 4% !important;
+    }
+
+    .archive .project-col:nth-child(2n) {
+        margin-right : 0 !important;
+        clear        : none;
+    }
+}
+
+/* 
+ * Single project page 
+ */
+
+@media (min-width : 980px) {
+    .project-thumb {
+        height        : 350px;
+        overflow      : hidden;
+        border-radius : 10px;
+        position      : relative;
+    }
+
+    .project-thumb img {
+        height          : 100%;
+        width           : 100%;
+        max-width       : none;
+        object-fit      : cover;
+        object-position : center;
+    }
+}
+
+.project-thumb {
+    margin-bottom : 40px;
+}
+
+.project-thumb img {
+    border-radius : 10px;
+}
+
+.single-project .et_project_categories {
+    display        : block;
+    font-size      : 14px;
+    text-transform : uppercase;
+}
+
+.single-project .et_main_title {
+    margin-bottom : 15px;
+}
+
+.single-project .project-content {
+    border        : 1px solid rgba(0, 0, 0, 0.1);
+    padding       : 25px !important;
+    border-radius : 10px;
+    margin-bottom : 20px;
+}
+
+.single-project #comment-wrap {
+    margin-top : 30px;
+}
+
+/* Prev Next project */
+
+.single-project .nav-single {
+    padding : 20px 0;
+}
+
+.single-project .nav-single a {
+    font-size     : 15px;
+    border        : 2px solid rgba(0, 0, 0, 0.1);
+    padding       : 10px 25px;
+    line-height   : 1.2 !important;
+    border-radius : 25px;
+    color         : inherit;
+    font-weight   : 700;
+    display       : block;
+}
+
+@media (max-width : 767px) {
+    .single-project .nav-single .nav-previous, .single-project .nav-single .nav-next {
+        display    : block;
+        float      : none;
+        text-align : center;
+    }
+
+    .single-project .nav-single span {
+        margin-bottom : 15px;
+    }
+
+    .single-project .nav-single span:last-child {
+        margin-bottom : 0;
+    }
+}
+
+/* Other posts section  */
+
+.divinonprofit-rand-posts-slider .project-col .et_pb_project-image {
+    height : 200px;
+}
+
+.divinonprofit-rand-posts-slider .project-col .post-excerpt {
+    display : none;
+}
+
+.divinonprofit-rand-posts-slider .project-col .meta {
+    padding    : 20px 10px;
+    text-align : center;
+}
+
+.divinonprofit-rand-posts-slider .project-col .et_pb_module_header {
+    margin-bottom : 5px;
+}
+
+.divinonprofit-rand-posts-slider .project-col h2.et_pb_module_header {
+    font-size : 20px;
+}

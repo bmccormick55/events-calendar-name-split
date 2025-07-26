@@ -1,0 +1,1157 @@
+/**
+ * Theme Name:       Divi Nonprofit
+ * Theme URI:        https://divinonprofit.aspengrovestudio.com/
+ * Description:      Divi Child Theme For Nonprofit Organizations
+ * Author:           Divi Space
+ * Author URI:       https://divi.space/
+ * Template:         Divi
+ * Version:          1.2.9
+ * License:          GPLv3
+ * License URI:      https://www.gnu.org/licenses/gpl-3.0.en.html
+ * Tags:             Divi, Child Theme, Nonprofit, Ecommerce
+ * Text Domain:      divi-nonprofit
+ * GitLab Theme URI: https://gitlab.com/aspengrovestudios/divinonprofit/
+ * AGS Info: ids.aspengrove 390059 ids.divispace 394888 legacy.key agstheme_divinonprofit_license_key legacy.status agstheme_divinonprofit_license_key_status adminPage admin.php?page=AGS_child_theme docs https://support.aspengrovestudios.com/article/426-divi-nonprofit
+ */
+
+/*
+Divi Nonprofit Child Theme
+Copyright (C) 2021 Divi Space, an Aspen Grove Studios company
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+============
+
+For the text of the GNU General Public License version 3,
+and licensing/copyright information for third-party code used in this product, see ./license.txt.
+
+*/
+
+/*
+ *
+ * IMPORTANT: UTILIZING THE AUTOMATIC UPDATE FEATURE OF THIS CHILD THEME WILL OVERWRITE ANY
+ * CUSTOM CODE PLACED WITHIN THIS FILE. IF YOU WISH TO AUTOMATICALLY UPDATE, PLEASE PLACE
+ * YOUR CODE IN THEME OPTIONS >> CUSTOM CSS OTHERWISE YOU CAN MANUALLY UPDATE THE THEME FILES
+ *
+ */
+
+body {
+    line-height : 1.4;
+}
+
+#page-container:not(.et-fb-root-ancestor) {
+    overflow : hidden;
+}
+
+#main-content {
+    background-color : transparent;
+}
+
+#main-content .container:before {
+    width : 0;
+}
+
+.center-block {
+    display      : block;
+    margin-right : auto;
+    margin-left  : auto;
+}
+
+.et_overlay {
+    border : none !important;
+}
+
+/* Navigation / Pagination */
+
+.et_pb_portofolio_pagination ul,
+.et_pb_gallery_pagination ul,
+.et_pb_portofolio_pagination,
+.et_pb_gallery_pagination,
+.woocommerce-pagination ul.page-numbers,
+.wp-pagenavi {
+    border     : none !important;
+    text-align : center !important;
+}
+
+.et_pb_portofolio_pagination ul li,
+.et_pb_gallery_pagination ul li {
+    padding : 5px !important;
+}
+
+.single-project-gallery .et_pb_gallery_pagination ul li {
+    float   : none;
+    display : inline-block;
+    padding : 5px 3px;
+}
+
+.et_pb_gallery_pagination ul li a,
+.et_pb_portofolio_pagination li a,
+.woocommerce-pagination li a,
+.woocommerce-pagination span.current,
+.wp-pagenavi a,
+.wp-pagenavi span.current {
+    padding       : 5px 20px !important;
+    font-size     : 14px !important;
+    line-height   : 1.3 !important;
+    border-radius : 30px !important;
+    font-weight   : 600 !important;
+    transition    : 0.3s all;
+    display       : inline-block;
+    margin-bottom : 5px;
+}
+
+.et_pb_gallery_pagination ul li a,
+.et_pb_portofolio_pagination li a,
+.woocommerce-pagination li a,
+.wp-pagenavi a {
+    border     : 1px solid !important;
+    color      : #000 !important;
+    background : transparent !important;
+}
+
+.et_pb_gallery_pagination ul li a.active,
+.et_pb_portofolio_pagination li a.active,
+.woocommerce-pagination span.current,
+.wp-pagenavi span.current {
+    border-width : 1px !important;
+    border-style : solid !important;
+    color        : #FFF !important;
+}
+
+.et_pb_gallery_pagination ul li a:hover,
+.et_pb_portofolio_pagination li a:hover,
+.woocommerce-pagination li a:hover,
+.wp-pagenavi a:hover {
+    color : #FFF !important;
+}
+
+.woocommerce .woocommerce-pagination ul.page-numbers li,
+.woocommerce-page .woocommerce-pagination ul.page-numbers li {
+    border  : none !important;
+    padding : 4px;
+}
+
+/*
+ * 404 Page
+ */
+
+.not-found-404 .et_pb_section {
+    padding : 30px 0;
+}
+
+.not-found-404 .et_pb_row {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    padding         : 0;
+}
+
+.not-found-404 p {
+    font-size   : 23px;
+    line-height : 1.2;
+}
+
+.not-found-404 h2 {
+    font-weight : 900;
+    line-height : 75% !important;
+    font-size   : 75px;
+    margin-top  : 10px;
+}
+
+.not-found-404 .buttons-container {
+    display    : block;
+    margin-top : 15px;
+}
+
+.not-found-404 .buttons-container a.et_pb_button {
+    display : inline-block;
+}
+
+@media (min-width : 767px) {
+    .not-found-404 .et_pb_row img {
+        width         : 50%;
+        padding-right : 5px;
+    }
+
+    .not-found-404 .et_pb_row .text-col {
+        width : 50%;
+    }
+}
+
+@media (min-width : 767px) and (max-width : 980px) {
+    .not-found-404 p {
+        font-size : 20px;
+    }
+
+    .not-found-404 h2 {
+        font-size : 65px;
+    }
+}
+
+@media (max-width : 767px) {
+    .not-found-404 .et_pb_row {
+        padding : 30px 0
+    }
+
+    .not-found-404 p {
+        font-size : 18px;
+    }
+
+    .not-found-404 h2 {
+        font-size : 55px;
+    }
+
+    .not-found-404 .et_pb_row img {
+        max-width    : 250px;
+        margin-left  : -100px;
+        margin-right : 10px;
+    }
+}
+
+@media (max-width : 530px) {
+    .not-found-404 .et_pb_row img {
+        display : none;
+    }
+
+    .not-found-404 .et_pb_row {
+        text-align : center;
+    }
+}
+
+/*
+ * Give WP Plugin
+ */
+
+.give-submit-button-wrap .give-btn,
+.give-btn.give-btn-reveal,
+.give-btn.give-btn-modal {
+    background : transparent;
+    min-width  : 160px;
+    text-align : center;
+}
+
+.give-form-wrap .give-form-content-wrap {
+    font-size   : 13px;
+    line-height : 1.3em;
+    opacity     : 0.75;
+    margin-top  : 0 !important;
+}
+
+.give-modal .mfp-content {
+    border-radius : 10px;
+    padding       : 30px;
+}
+
+.give-goal-progress .income {
+    font-weight : bold;
+}
+
+#give-recurring-form,
+form.give-form,
+form[id*=give-form] {
+    margin : 0 0 10px 0;
+}
+
+.single-give_forms .give-wrap {
+    padding-bottom : 58px;
+}
+
+.give_error, .give_success {
+    padding : 1em 1em 1em 2em !important;
+}
+
+/* NavXT Breadcrumbs */
+
+.breadcrumbs {
+    margin-bottom : 15px;
+    display       : block;
+    font-size     : 15px;
+    line-height   : 1.4;
+}
+
+.breadcrumbs a {
+    color   : inherit;
+    opacity : 0.75;
+}
+
+.breadcrumbs a:hover {
+    opacity : 1;
+}
+
+/*
+ * Homepage Styles
+ */
+
+/* Fulwwidth Slider Section */
+
+.home-slider .et-pb-arrow-next,
+.home-slider .et-pb-arrow-prev {
+    margin-top    : -25px;
+    font-size     : 40px;
+    width         : 50px;
+    height        : 50px;
+    line-height   : 50px;
+    border-radius : 3px;
+    text-align    : center;
+    color         : #FFF !important;
+}
+
+.home-slider .et-pb-arrow-next:before,
+.home-slider .et-pb-arrow-prev:before {
+    line-height : inherit;
+}
+
+@media (max-width : 600px) {
+    .home-slider .et-pb-arrow-next,
+    .home-slider .et-pb-arrow-prev {
+        margin-top  : -18px;
+        font-size   : 25px;
+        width       : 36px;
+        height      : 36px;
+        line-height : 36px;
+    }
+}
+
+/* Blog Section */
+
+.home-blog.et_pb_module .et_pb_image_container a.entry-featured-image-url,
+.home-blog.et_pb_module .et_pb_slider.et_pb_gallery_post_type,
+.home-blog.et_pb_module .et_pb_video_overlay,
+.home-blog.et_pb_module .et_quote_content,
+.home-blog.et_pb_module .et_audio_content,
+.home-blog.et_pb_module .et_link_content {
+    border-radius : 10px;
+    overflow      : hidden;
+}
+
+.home-blog .post-content p {
+    max-height  : 70px;
+    overflow    : hidden;
+    font-size   : 15px;
+    line-height : 23px;
+}
+
+/*
+ * Second Homepage Version
+ */
+
+/* Sponsors Section  */
+
+.sponsors-section .et_pb_image_wrap {
+    transition     : all 0.6s ease-out;
+    -webkit-filter : grayscale(100%);
+    filter         : grayscale(100%);
+}
+
+.sponsors-section .et_pb_image_wrap:hover {
+    -webkit-filter : none;
+    filter         : none;
+}
+
+/* Donation Slider */
+
+.slider-donation .give-goal-progress .income {
+    font-size : 38px;
+}
+
+.slider-donation .et_pb_slide_description h2 {
+    margin-top    : 30px;
+    margin-bottom : 20px;
+}
+
+.slider-donation .et_pb_text_overlay_wrapper {
+    padding : 30px 45px;
+}
+
+@media (max-width : 980px) {
+    .slider-donation .et_pb_text_overlay_wrapper {
+        padding : 15px 25px;
+    }
+
+    .slider-donation .et_pb_slide .et_pb_slide_description {
+        padding-right : 0 !important;
+    }
+
+    .slider-donation .et_pb_slide {
+        padding : 0;
+    }
+}
+
+/*
+ * Contact Page
+ */
+
+.contact-blurb .et_pb_main_blurb_image {
+    padding-right  : 10px;
+    border-right   : 1px solid rgba(0, 0, 0, 0.1);
+    vertical-align : middle;
+}
+
+.contact-blurb .et_pb_blurb_container {
+    padding-left : 25px;
+}
+
+@media (max-width : 400px) {
+    .contact-blurb {
+        text-align     : center;
+        border-bottom  : 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom : 10px;
+    }
+
+    .contact-blurb .et_pb_main_blurb_image,
+    .contact-blurb .et_pb_blurb_container {
+        border     : none;
+        display    : block;
+        padding    : 0;
+        margin     : 0 auto 15px !important;
+        text-align : center !important;
+    }
+}
+
+/*
+ * Caldera Forms
+ *
+ * since 1.1.2 divi contact & optin forms
+ */
+
+.caldera-grid .form-control,
+.dnp-form input[type="text"], .dnp-form input[type="email"], .dnp-form select, .dnp-form textarea {
+    height           : auto !important;
+    line-height      : 1.25 !important;
+    border-radius    : 10px !important;
+    font-size        : 16px !important;
+    background-color : #FFF !important;
+    border           : 1px solid rgba(0, 0, 0, 0.15) !important;
+    box-shadow       : none !important;
+}
+
+.caldera-grid .form-control,
+.dnp-form input[type="text"], .dnp-form input[type="email"], .dnp-form select, .dnp-form textarea,
+.dnp-form p.et_pb_newsletter_field input[type="text"], .dnp-form p.et_pb_newsletter_field input[type="email"], .dnp-form p.et_pb_newsletter_field select, .dnp-form p.et_pb_newsletter_field textarea {
+    padding : 12px 25px !important;
+}
+
+.caldera-grid .btn:hover {
+    color : #FFF !important;
+}
+
+/*
+ * Caldera Newsletter Section
+ */
+
+.da-newsletter .caldera-grid .form-control {
+    border-radius : 25px !important;
+}
+
+.da-newsletter .caldera-grid .btn {
+    display : block !important;
+    width   : 100%;
+    color   : #FFF !important;
+}
+
+.caldera-grid .btn {
+    height : auto;
+}
+
+/*
+ * Divi Form with round corners
+ */
+
+.dnp-rounded-cornerns-form input[type="text"], .dnp-rounded-cornerns-form input[type="email"], .dnp-rounded-cornerns-form select, .dnp-rounded-cornerns-form textarea {
+    border-radius : 25px !important;
+}
+
+/*
+ * Divi Newsletter Form
+ */
+
+@media (min-width : 767px) {
+    .dnp-newsletter-form-inline .et_pb_newsletter_fields .et_pb_newsletter_field,
+    .dnp-newsletter-form-inline .et_pb_newsletter_fields .et_pb_newsletter_button_wrap {
+        margin     : 8px;
+        flex-basis : auto;
+        flex-grow  : 1
+    }
+
+    .dnp-newsletter-form-inline .et_pb_button {
+        min-width : 160px;
+    }
+}
+
+/*
+ * About Page
+ */
+
+.about-blurb.et_pb_blurb_position_left .et_pb_main_blurb_image,
+.about-blurb.et_pb_blurb_position_right .et_pb_main_blurb_image {
+    vertical-align : middle;
+    width          : 60px;
+}
+
+@media (min-width : 980px) {
+    .about-blurb.about-blutb-right .et_pb_blurb_content {
+        direction : rtl;
+    }
+
+    .about-blurb.about-blutb-right .et_pb_blurb_content > div {
+        direction : ltr;
+    }
+
+    .about-blurb.about-blutb-right .et_pb_blurb_container {
+        padding-left  : 0;
+        padding-right : 15px;
+        text-align    : right !important;
+    }
+}
+
+/*
+ * Help Page
+ */
+
+.help-col {
+    border-radius : 10px;
+    border        : 2px solid transparent;
+    transition    : all 0.2s ease-in-out 0s;
+}
+
+/*
+ * Divi Modules
+ */
+
+/* Tabs module */
+
+.et_pb_tabs {
+    border        : 1px solid rgba(0, 0, 0, 0.1);
+    padding       : 10px 20px;
+    border-radius : 10px;
+}
+
+.et_pb_tabs .et_pb_tab {
+    padding : 15px 10px;
+}
+
+.et_pb_tabs ul.et_pb_tabs_controls {
+    background-color : transparent;
+}
+
+.et_pb_tabs ul.et_pb_tabs_controls:after {
+    border : none;
+}
+
+.et_pb_tabs ul.et_pb_tabs_controls li {
+    margin           : 10px 2px !important;
+    border           : 2px solid rgba(0, 0, 0, 0.1) !important;
+    padding          : 0;
+    border-radius    : 25px !important;
+    background-color : transparent;
+    text-align       : center;
+}
+
+.et_pb_tabs ul.et_pb_tabs_controls li a {
+    padding : 5px 20px !important;
+}
+
+/* Person module */
+
+.et_pb_team_member .et_pb_module_header {
+    padding-bottom : 5px;
+}
+
+.et_pb_team_member_image {
+    margin-bottom : 20px !important;
+    width         : 100%;
+    border-radius : 10px;
+    overflow      : hidden;
+    line-height   : 0;
+}
+
+.et_pb_member_position {
+    margin-bottom : 10px;
+}
+
+.et_pb_member_social_links li a {
+    width         : 40px;
+    height        : 40px;
+    line-height   : 40px;
+    border        : 2px solid;
+    border-radius : 50%;
+}
+
+.et_pb_member_social_links li {
+    margin-right : 8px;
+}
+
+/* Accordion module */
+
+.et_pb_accordion .et_pb_toggle {
+    padding-left : 10px;
+}
+
+.et_pb_accordion .et_pb_toggle .et_pb_toggle_title {
+    padding : 0 0 0 30px !important;
+}
+
+.et_pb_accordion .et_pb_toggle .et_pb_toggle_content {
+    padding-left : 30px;
+}
+
+.et_pb_accordion .et_pb_toggle_title:before {
+    right       : auto;
+    left        : 0;
+    content     : "\35";
+    font-weight : bold;
+    font-size   : 22px;
+    margin-top  : -11px;
+    line-height : 1;
+}
+
+.et_pb_accordion .et_pb_toggle_open .et_pb_toggle_title:before {
+    content : "\33" !important;
+    display : block !important;
+}
+
+/* Toogle module */
+
+.toggle-section .et_pb_toggle {
+    background-color : transparent;
+    border           : 2px solid #2A2F361C;
+    border-radius    : 10px;
+}
+
+.toggle-section .et_pb_toggle_open {
+    background-color : transparent;
+}
+
+.toggle-section .et_pb_toggle_open .et_pb_toggle_title:before {
+    content : url("/wp-content/uploads/2018/04/minus.png");
+    top     : 3px;
+}
+
+.toggle-section .et_pb_toggle_close .et_pb_toggle_title:before {
+    content : url("/wp-content/uploads/2018/04/plus.png");
+    top     : 3px;
+}
+
+.toggle-section .et_pb_toggle_close {
+    border-radius : 10px;
+    border-width  : 2px;
+}
+
+/*
+ * Project (portfolio) modules + gallery module
+ */
+
+.et_pb_gallery .et_pb_gallery_item,
+.et_pb_portfolio_grid .et_pb_portfolio_item,
+.et_pb_portfolio .et_pb_portfolio_item {
+    margin-bottom : 25px !important;
+}
+
+.et_pb_gallery .et_pb_gallery_item img,
+.et_pb_portfolio_grid .et_portfolio_image img,
+.et_pb_portfolio .et_portfolio_image img {
+    overflow      : hidden;
+    border-radius : 10px;
+}
+
+.et_pb_portfolio_grid .et_pb_portfolio_item .et_pb_module_header,
+.et_pb_portfolio .et_pb_portfolio_item .et_pb_module_header {
+    padding     : 10px 15px 5px;
+    font-weight : 600;
+    font-size   : 20px;
+    line-height : 1.1 !important;
+}
+
+.et_pb_gallery .et_pb_gallery_item .et_pb_gallery_title {
+    padding     : 5px 15px 0;
+    font-weight : 600;
+    font-size   : 17px;
+    line-height : 1.1 !important;
+}
+
+.et_pb_portfolio_grid .et_pb_portfolio_item .post-meta,
+.et_pb_portfolio .et_pb_portfolio_item .post-meta {
+    padding        : 0 15px;
+    margin         : 0;
+    text-transform : uppercase;
+    font-size      : 14px;
+}
+
+/* Filterable Portfolio Filters */
+
+.et_pb_portfolio_filters {
+    margin-bottom : 25px !important;
+}
+
+.et_pb_filterable_portfolio .et_pb_portfolio_filters li a {
+    margin        : 3px;
+    border-width  : 2px;
+    padding       : 8px 18px;
+    border-radius : 25px !important;
+    font-weight   : 600;
+    text-align    : center;
+}
+
+.et_pb_filterable_portfolio .et_pb_portfolio_filters li a:not(.active):hover {
+    background-color : transparent;
+}
+
+/* Fullwidth Portfolio */
+
+.et_pb_fullwidth_portfolio .et_pb_portfolio_item {
+    border        : 7px solid transparent;
+    border-radius : 15px;
+    overflow      : hidden;
+}
+
+.et_pb_fullwidth_portfolio .et_pb_portfolio_title,
+.et_pb_fullwidth_portfolio h2.et_pb_portfolio_title {
+    margin-bottom : 13px !important;
+}
+
+.et_pb_fullwidth_portfolio .et_pb_portfolio_image .et_pb_module_header {
+    font-weight : 600;
+    padding     : 0 35px;
+    margin      : 0 auto !important;
+}
+
+.et_pb_fullwidth_portfolio .et_pb_portfolio_image p.post-meta {
+    text-transform : uppercase;
+    padding        : 0 35px;
+    margin-top     : 5px;
+    line-height    : normal;
+}
+
+.et_pb_fullwidth_portfolio .et_pb_portfolio_image .et_overlay:before {
+    display : none;
+}
+
+.et_pb_fullwidth_portfolio .et_pb_portfolio_image .meta a {
+    display         : flex;
+    align-items     : center;
+    flex-direction  : column;
+    height          : 100%;
+    width           : 100%;
+    justify-content : center;
+}
+
+.et_pb_fullwidth_portfolio .et-pb-arrow-next,
+.et_pb_fullwidth_portfolio .et-pb-arrow-prev {
+    margin-top    : -15px !important;
+    font-size     : 35px !important;
+    width         : 40px;
+    height        : 40px;
+    line-height   : 45px !important;
+    border-radius : 3px;
+    text-align    : center;
+    color         : #FFF !important;
+}
+
+/*
+ * Other Posts Section
+ */
+
+.divinonprofit_other_posts_section {
+    background : #F4F4F4;
+    padding    : 30px 0;
+}
+
+.divinonprofit_other_posts_section h3 {
+    margin-bottom : 10px;
+    font-size     : 25px;
+}
+
+.divinonprofit-rand-posts-slider .slick-track .slick-slide {
+    margin : 0 8px;
+}
+
+/*
+ * Our Mission Page
+ */
+
+.our_mission {
+    border-radius : 10px;
+    border        : 2px solid transparent;
+}
+
+/*
+ * Pricing Page
+ */
+
+/* Pricing table shape */
+.pricing-section .et_pb_pricing_table {
+    padding-bottom : 0;
+}
+
+.pricing-section .et_pb_pricing_content_top,
+.pricing-section .et_pb_pricing_title {
+    padding : 10px 0 5px 0;
+}
+
+.pricing-section .et_pb_pricing_heading,
+.pricing-section .et_pb_pricing_title {
+    margin : 0;
+}
+
+.pricing-section .et_pb_best_value {
+    padding-top    : 5px;
+    padding-bottom : 10px;
+}
+
+.pricing-section .et_pb_button_wrapper {
+    padding : 20px 0;
+}
+
+.pricing-section .et_pb_pricing_content {
+    padding : 5px 10px;
+}
+
+.pricing-section .et_pb_pricing_content .et_pb_pricing li {
+    padding       : 0.5em 0 0.5em 5px;
+    border-bottom : 1px solid #F3EFEF;
+}
+
+.pricing-section .et_pb_pricing_content .et_pb_pricing li:nth-last-child(1) {
+    border : none;
+}
+
+.pricing-section .et_pb_pricing {
+    max-width    : 500px;
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+/* Pricing Icon Section */
+
+.pricing-icon-section:before {
+    background-color : #2A2F36;
+    content          : "";
+    width            : 100%;
+    height           : 100%;
+    position         : absolute;
+    left             : 0;
+    top              : 0;
+    opacity          : 0.9;
+}
+
+/*
+ * FAQ Page
+ */
+
+/* contact-icons */
+
+.contact-blurb .et_pb_main_blurb_image {
+    min-width     : 52px;
+    padding-right : 13px;
+}
+
+/*
+ * In the News
+ */
+
+.about-us--press .et_pb_blurb_content {
+    text-align   : left;
+    padding-left : 10px;
+}
+
+.section-date {
+    background : url("/wp-content/uploads/2018/04/TimeIcon30x30.png") no-repeat;
+    height     : 30px;
+}
+
+.section-date .et_pb_text_inner {
+    padding-top  : 4px;
+    padding-left : 40px;
+}
+
+/*
+ * Slick Carousel
+ */
+
+/* Hide when is not initialized */
+.animal-slider,
+.divinonprofit-rand-posts-slider,
+.et_pb_animals_feed {
+    opacity            : 0;
+    visibility         : hidden;
+    transition         : opacity 1s ease;
+    -webkit-transition : opacity 1s ease;
+}
+
+.animal-slider.slick-initialized,
+.divinonprofit-rand-posts-slider.slick-initialized,
+.et_pb_animals_feed.slick-initialized {
+    opacity    : 1 !important;
+    visibility : visible !important;
+}
+
+/* Hide Headers for Tickets Plugin */
+.tribe-tickets__commerce-checkout .tribe-tickets__commerce-checkout-header,
+.tribe-tickets__commerce-checkout .tribe-tickets__commerce-checkout-cart-header {
+	display: none!important;
+}
+
+/*
+ * Project & Animal post type
+ * archive top section
+ */
+
+.interior-header {
+    padding : 35px 0;
+}
+
+.interior-header h1 {
+    margin-bottom : 10px;
+}
+
+form#divinonprofit_searchform {
+    margin    : 0 auto;
+    width     : 100%;
+    max-width : 450px;
+    display   : block;
+    overflow  : hidden;
+}
+
+form#divinonprofit_searchform input[type=text] {
+    padding          : 0 25px !important;
+    font-size        : 15px;
+    line-height      : 45px;
+    height           : 45px;
+    border-radius    : 30px;
+    width            : 100%;
+    border-radius    : 30px;
+    background-color : #FFF;
+    border           : none !important;
+    display          : block;
+}
+
+form#divinonprofit_searchform input[type=submit] {
+    font-size     : 16px;
+    border        : none;
+    box-shadow    : none;
+    color         : #FFF;
+    border-radius : 30px;
+    text-align    : center;
+    display       : block;
+    padding       : 12px 25px;
+    width         : 100%;
+    margin-top    : 10px;
+}
+
+@media (min-width : 760px) {
+    form#divinonprofit_searchform {
+        display          : flex;
+        flex-wrap        : nowrap;
+        border-radius    : 30px;
+        background-color : #FFF;
+    }
+
+    form#divinonprofit_searchform input[type=submit] {
+        height      : 45px;
+        padding     : 0 30px;
+        line-height : 45px;
+        margin      : 0;
+        width       : auto;
+    }
+}
+
+.um-account-heading {
+    font-family: Lora, Georgia, 'Times New Roman', sans-serif;
+    font-weight: 500 !important;
+    font-size: 30px !important;
+    line-height: 42px !important;
+    color: #5375b5 !important;
+}
+
+.um .um-field-group-head,
+.picker__box,
+.picker__nav--prev:hover,
+.picker__nav--next:hover,
+.um .um-members-pagi span.current,
+ .um .um-members-pagi span.current:hover,
+ .um .um-profile-nav-item.active a,
+ .um .um-profile-nav-item.active a:hover,
+ .upload,
+ .um-modal-header,
+ .um-modal-btn,
+ .um-modal-btn.disabled,
+ .um-modal-btn.disabled:hover,
+ div.uimob800 .um-account-side li a.current,
+ div.uimob800 .um-account-side li a.current:hover,
+
+.um input[type=submit].um-button,
+.um input[type=submit].um-button:focus,
+.um a.um-button,
+.um a.um-button.um-disabled:hover,
+.um a.um-button.um-disabled:focus,
+.um a.um-button.um-disabled:active {
+    background-color: #5375b5 !important;
+}
+
+.um input[type=submit].um-button:hover,
+.um a.um-button:hover {
+    opacity: 0.7 !important;
+}
+
+.um .um-tip:hover,
+.um .um-field-radio.active:not(.um-field-radio-state-disabled) i,
+.um .um-field-checkbox.active:not(.um-field-radio-state-disabled) i,
+.um .um-member-name a:hover,
+.um .um-member-more a:hover,
+.um .um-member-less a:hover,
+.um .um-members-pagi a:hover,
+.um .um-cover-add:hover,
+.um .um-profile-subnav a.active,
+.um .um-item-meta a,
+.um-account-name a:hover,
+.um-account-nav a.current,
+.um-account-side li a.current span.um-account-icon,
+.um-account-side li a.current:hover span.um-account-icon,
+.um-dropdown li a:hover,
+i.um-active-color,
+span.um-active-color,
+.um a.um-link {
+    color: #5375b5 !important;
+}
+
+.llrs-account-button {
+    display: block;
+    margin: 3px 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color: #5375b5;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.llrs-account-button:hover,
+.llrs-account-button:active,
+.llrs-account-button:focus {
+    color: #900;
+}
+
+.llrs-account-button:first-child {
+    margin-top: 0;
+}
+
+.llrs-account-button:last-child {
+    margin-bottom: 0;
+}
+
+.um-profile-edit.um-profile-headericon {
+    display: none;
+}
+
+
+.member-notification {
+    margin-bottom: 50px;
+}
+
+.member-notification p {
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 981px) {
+
+    #main-header {
+        position: static;
+        margin: 0 !important;
+        padding: 32px !important;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+        box-shadow: none;
+    }
+
+    #main-header * {
+        float: none !important;
+    }
+
+    #main-header .clearfix:after {
+        content: none;
+    }
+
+    #main-header .et_menu_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+        width: calc(100% - 63px) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #main-header .logo_container {
+        min-width: 260px;
+        width: 260px;
+        height: unset;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: static;
+    }
+
+    #main-header .logo_container > a {
+        display: block;
+    }
+
+    #logo {
+        margin: 0 !important;
+    }
+
+    #main-header .logo_helper {
+        display: none;
+    }
+
+    #et-top-navigation {
+        float: none;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #top-menu {
+        float: none !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 17px;
+        row-gap: 32px;
+        margin: 0 !important; /* 32px -17px 0 0; */
+    }
+
+    #et-top-navigation nav > ul > li {
+        padding: 0 !important;
+    }
+
+    #et-top-navigation nav > ul > li > a {
+        margin: 0 !important; /* 0 17px 17px 0 !important; */
+        padding: 0 !important;
+    }
+
+    #et-top-navigation nav > ul > li.menu-item-has-children > a {
+        padding: 0 17px 0 0 !important;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #main-header {
+        padding: 8px 32px !important;
+    }
+
+    #main-header .logo_container {
+        min-width: 225px;
+        width: 225px;
+    }
+}
